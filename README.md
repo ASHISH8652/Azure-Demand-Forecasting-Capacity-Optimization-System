@@ -38,7 +38,7 @@ Azure-Demand-Forecasting-Capacity-Optimization-System/
 │
 ├── milestone2_feature_engineering/
 │   ├── Milestone2_Feature_Engineering.ipynb
-│   ├── engineered_dataset.csv
+│   ├── feature_engineered_dataset.csv
 │
 ├── milestone3_model_training/
 │
