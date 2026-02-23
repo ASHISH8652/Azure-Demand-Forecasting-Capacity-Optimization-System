@@ -30,13 +30,15 @@ This project simulates a real-world cloud infrastructure analytics pipeline, fol
 ---
 ## 🏗️ Project Architecture (Milestone-Based Development)
 ```
-Azure-Demand-Forecasting-System/
+Azure-Demand-Forecasting-Capacity-Optimization-System/
 │
 ├── milestone1_data_cleaning/
 │   ├── notebook.ipynb
 │   ├── cleaned_dataset.csv
 │
 ├── milestone2_feature_engineering/
+│   ├── Milestone2_Feature_Engineering.ipynb
+│   ├── engineered_dataset.csv
 │
 ├── milestone3_model_training/
 │
@@ -44,8 +46,6 @@ Azure-Demand-Forecasting-System/
 │
 ├── data/
 │   ├── raw_dataset.csv
-│
-├── images/
 │
 ├── requirements.txt
 ├── LICENSE
@@ -111,14 +111,72 @@ Azure-Demand-Forecasting-System/
 * Cost values standardized to 2 decimal precision
 * Time-series data properly formatted
 
+## 🔧 Milestone 2 – Feature Engineering & Data Wrangling
+
+### 🔬 Milestone 2 – Feature Engineering & Data Wrangling
+
+> Milestone 2 transforms the cleaned dataset into a model-ready forecasting dataset by enriching it with time-series intelligence and business-driven derived features.
+
+## 🎯 Objective
+* Prepare the dataset for forecasting models through:
+* Identification of demand-driving variables
+* Creation of lag-based historical influence features
+* Detection of abnormal usage spikes
+* Engineering rolling statistics for trend smoothing
+* Structuring consistent time-series schema
+
+## 🧠 Feature Engineering Implemented
+### 🔹 Time-Based Features
+* Year
+* Month
+* Quarter
+* Week of Year
+* Month Start / End Flags
+
+> These allow models to understand seasonal demand behavior.
+
+### 🔹 Lag Features
+* lag_1
+* lag_2
+* lag_4
+* lag_8
+
+> These capture historical demand memory across region + service combinations.
+
+### 🔹 Rolling Statistics
+* rolling_mean_3
+* rolling_mean_6
+* rolling_std_3
+* rolling_std_6
+
+> These smooth short-term fluctuations and measure volatility.
+
+### 🔹 Business Context Features
+* Capacity Utilization (usage / provisioned_capacity)
+* Growth Rate (short-term & medium-term)
+* Demand Spike Flag (statistical anomaly detection)
+
+> These features connect technical modeling with business impact.
+
+### 🔹 Data Wrangling Steps
+
+✔ Time sorting per region + service
+✔ Consistent time granularity
+✔ Categorical encoding
+✔ Removal of lag-induced null values
+✔ Final model-ready schema export
+
+### 📦 Output
+* feature_engineered_dataset.csv
+
+> This dataset is now ready for:
+* ARIMA / SARIMA
+* Prophet
+* XGBoost
+* LSTM
+
+
 ## 🚀 Upcoming Milestones
-🔹 Milestone 2 – Feature Engineering
-
-* Lag features
-* Rolling averages
-* Seasonality extraction
-* Trend decomposition
-
 🔹 Milestone 3 – Model Development
 
 * ARIMA / SARIMA
