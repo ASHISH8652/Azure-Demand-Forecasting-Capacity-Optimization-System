@@ -207,6 +207,11 @@ Azure-Demand-Forecasting-Capacity-Optimization-System/
 > Encoded categorical variables
 > This allows the model to capture complex nonlinear relationships in demand behavior.
 
+### 🔹 LSTM (Long Short-Term Memory) Deep Learning Model
+> LSTM is a recurrent neural network architecture designed specifically for sequential and time-series data.
+> The LSTM model captures long-term temporal dependencies in historical demand signals and learns complex sequential patterns that traditional statistical models may miss.
+> This deep learning approach enhances forecasting capability by modeling nonlinear time-based relationships within the demand data.
+
 ## ⚙️ Model Training Workflow
 
 > The model development pipeline includes:
@@ -215,7 +220,7 @@ Azure-Demand-Forecasting-Capacity-Optimization-System/
 ✔ Timestamp conversion and time ordering
 ✔ Feature / target variable separation
 ✔ Train-test split using time-series methodology
-✔ Model training using ARIMA and XGBoost
+✔ Model training using ARIMA and XGBoost and LSTM
 ✔ Demand prediction generation
 ✔ Performance evaluation using regression metrics
 
@@ -234,6 +239,15 @@ Azure-Demand-Forecasting-Capacity-Optimization-System/
 * ARIMA	Baseline Forecast	Baseline Error	Baseline Fit
 * XGBoost	Improved Prediction	Lower Error	Higher Variance Explanation
 * XGBoost demonstrates strong performance due to its ability to leverage engineered features and nonlinear relationships.
+* After evaluation using MAE, RMSE, and R² metrics, XGBoost achieved the most accurate and stable predictions, making it the selected model for deployment in the next milestone.
+
+| Model   | Type              | Performance |
+|--------|------------------|------------|
+| ARIMA  | Statistical Model | Baseline Forecast |
+| XGBoost| Machine Learning  | Best Performance |
+| LSTM   | Deep Learning     | Sequential Forecast |
+
+
 
 ## 📊 Feature Importance Analysis
 * Feature importance analysis was conducted to understand the key drivers of Azure demand prediction.
