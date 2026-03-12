@@ -41,6 +41,11 @@ Azure-Demand-Forecasting-Capacity-Optimization-System/
 │   ├── feature_engineered_dataset.csv
 │
 ├── milestone3_model_training/
+│   ├── Milestone3_Model_Development.ipynb
+│   ├── xgboost_demand_forecast_model.pkl
+│   ├── model_evaluation_report.md
+│   ├── agile_documentation.md
+│
 │
 ├── milestone4_deployment/
 │
@@ -175,21 +180,85 @@ Azure-Demand-Forecasting-Capacity-Optimization-System/
 * XGBoost
 * LSTM
 
+## 🤖 Milestone 3 – Machine Learning Model Development
+
+> Milestone 3 focuses on building predictive models capable of forecasting future Azure cloud demand using the engineered time-series dataset.
+
+## 🎯 Objective
+* Develop machine learning and statistical forecasting models
+* Train models using historical demand signals
+* Evaluate model performance using industry-standard metrics
+* Identify the best-performing approach for capacity demand prediction
+
+## 🧠 Models Implemented
+### 🔹 ARIMA (AutoRegressive Integrated Moving Average)
+> A classical statistical time-series forecasting model used to capture:
+> Temporal trends
+> Autocorrelation patterns
+> Demand seasonality behavior
+> ARIMA was trained on the aggregated demand time-series to establish a statistical forecasting baseline.
+
+### 🔹 XGBoost Regression Model
+> A powerful gradient boosting machine learning algorithm used for structured datasets.
+> XGBoost leverages the engineered features from Milestone 2 including:
+> Lag features
+> Rolling statistics
+> Business context features
+> Encoded categorical variables
+> This allows the model to capture complex nonlinear relationships in demand behavior.
+
+## ⚙️ Model Training Workflow
+
+> The model development pipeline includes:
+
+✔ Dataset loading from feature_engineered_dataset.csv
+✔ Timestamp conversion and time ordering
+✔ Feature / target variable separation
+✔ Train-test split using time-series methodology
+✔ Model training using ARIMA and XGBoost
+✔ Demand prediction generation
+✔ Performance evaluation using regression metrics
+
+## 📊 Model Evaluation Metrics
+> To assess forecasting performance, the following metrics were used:
+> MAE (Mean Absolute Error)
+  * Measures the average absolute difference between predicted and actual demand.
+> RMSE (Root Mean Squared Error)
+  * Penalizes large forecasting errors and highlights model stability.
+> R² Score (Coefficient of Determination)
+  * Indicates how well the model explains variance in demand patterns.
+
+## 📈 Model Performance Comparison
+* The project compares statistical forecasting with machine learning methods to determine which approach better captures Azure infrastructure demand dynamics.
+* Model	MAE	RMSE	R² Score
+* ARIMA	Baseline Forecast	Baseline Error	Baseline Fit
+* XGBoost	Improved Prediction	Lower Error	Higher Variance Explanation
+* XGBoost demonstrates strong performance due to its ability to leverage engineered features and nonlinear relationships.
+
+## 📊 Feature Importance Analysis
+* Feature importance analysis was conducted to understand the key drivers of Azure demand prediction.
+* Important predictive signals include:
+* Lag demand values
+* Rolling demand averages
+* Capacity utilization
+* Market demand indicators
+* Product launch impact
+* This provides insights into the operational drivers influencing infrastructure demand.
+
+### 📦 Output
+* Trained forecasting models
+* Model evaluation metrics
+* Forecast predictions on test dataset
+* Feature importance analysis
+* These outputs establish a reliable demand prediction system ready for deployment in the next milestone.
 
 ## 🚀 Upcoming Milestones
-🔹 Milestone 3 – Model Development
 
-* ARIMA / SARIMA
-* LSTM
-* Regression baselines
-* Model evaluation metrics
-
-🔹 Milestone 4 – Deployment
-
+### 🔹 Milestone 4 – Deployment
 * Streamlit dashboard
 * Forecast visualization
 * Real-time prediction interface
-
+* Interactive cloud demand analytics
 ## 📌 Academic & Industry Value
 
 ✔ End-to-end ML pipeline thinking
