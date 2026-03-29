@@ -1,0 +1,30 @@
+2026-03-23 04:55:32,742.89343,Prepare Additional Capacity,timestamp,predicted_usage_units,capacity_action,provisioned_capacity,availability_pct,market_demand_index,region,service,recommendation_note
+,,,2026-03-23 05:08:55,743.2501,Prepare Additional Capacity,1000.2999999999996,99.60000000000004,120.2000000000001,,,
+,,,2026-03-23 05:50:09,797.9839477539062,Prepare Additional Capacity,1000.2999999999996,99.9000000000002,120.10000000000004,Central India,Compute,
+,,,2026-03-24 00:18:28,742.8436279296875,Prepare additional capacity,1000.0,99.5,120.0,East Us,Compute,Demand is rising and may exceed safe operating limits.
+,,,2026-03-24 01:12:46,742.8436279296875,Prepare additional capacity,1000.0,99.5,120.0,East Us,Compute,Demand is rising and may exceed safe operating limits.
+,,,2026-03-24 02:17:10,742.8436279296875,Prepare additional capacity,1000.0,99.5,120.0,East Us,Compute,Demand is rising and may exceed safe operating limits.
+,,,2026-03-24 10:30:03,742.8436279296875,Prepare additional capacity,1000.0,99.5,120.0,East Us,Compute,Demand is rising and may exceed safe operating limits.
+,,,2026-03-26 09:11:20,742.8436279296875,Prepare additional capacity,1000.0,99.5,120.0,East Us,Compute,Demand is rising and may exceed safe operating limits.
+,,,2026-03-26 09:23:10,742.8436279296875,Prepare additional capacity,1000.0,99.5,120.0,East Us,Compute,Demand is rising and may exceed safe operating limits.
+,,,2026-03-26 20:07:51,742.8436279296875,Prepare additional capacity,1000.0,99.5,120.0,East Us,Compute,Demand is rising and may exceed safe operating limits.
+,,,2026-03-26 20:43:27,739.2326049804688,Prepare additional capacity,1000.1,99.39999999999996,120.10000000000004,Central India,Storage,Demand is rising and may exceed safe operating limits.
+,,,2026-03-27 05:37:37,753.7404174804688,Prepare Additional Capacity,1000.0,99.5,120.0,Central India,Compute,Demand is rising
+,,,2026-03-27 05:38:58,753.7404174804688,Prepare Additional Capacity,1000.0,99.5,120.0,Central India,Compute,Demand is rising
+,,,2026-03-27 05:49:37,753.7404174804688,Prepare Additional Capacity,1000.0,99.5,120.0,Central India,Compute,Demand is rising
+,,,2026-03-27 05:49:40,753.7404174804688,Prepare Additional Capacity,1000.0,99.5,120.0,Central India,Compute,Demand is rising
+,,,2026-03-27 06:29:17,753.7404174804688,Prepare Additional Capacity,1000.0,99.5,120.0,Central India,Compute,Demand is rising
+,,,2026-03-27 06:29:19,753.7404174804688,Prepare Additional Capacity,1000.0,99.5,120.0,Central India,Compute,Demand is rising
+,,,2026-03-27 12:44:02,753.7404174804688,Prepare Additional Capacity,1000.0,99.5,120.0,Central India,Compute,Demand is rising
+,,,2026-03-27 13:06:03,828.1630249023438,Prepare Additional Capacity,850.0,98.8,180.0,Central India,Compute,Demand is rising
+,,,2026-03-27 13:07:31,819.6991577148438,Prepare Additional Capacity,1300.0,99.9,80.0,West Europe,Storage,Demand is rising
+,,,2026-03-27 13:07:34,819.6991577148438,Prepare Additional Capacity,1300.0,99.9,80.0,West Europe,Storage,Demand is rising
+,,,2026-03-27 13:07:58,819.6991577148438,Prepare Additional Capacity,1300.0,99.9,80.0,West Europe,Storage,Demand is rising
+,,,2026-03-27 13:11:05,916.4022216796876,Scale Up Capacity Immediately,1500.0,95.46,280.0,East Us,Compute,High utilization risk
+,,,2026-03-27 13:12:24,641.2344360351562,Monitor Demand Closely,400.0,78.98,60.0,Southeast Asia,Storage,Moderate pressure
+,,,2026-03-27 13:13:37,641.2344360351562,Monitor Demand Closely,400.0,78.98,60.0,Southeast Asia,Storage,Moderate pressure
+,,,2026-03-27 13:32:13,643.1405029296875,Monitor Demand Closely,400.0,78.98,60.0,Central India,Compute,Moderate pressure
+,,,2026-03-29 06:40:15,753.7404174804688,Prepare Additional Capacity,1000.0,99.5,120.0,Central India,Compute,Demand is rising
+,,,2026-03-29 10:54:08,753.7404174804688,Prepare Additional Capacity,1000.0,99.5,120.0,Central India,Compute,Demand is rising
+,,,2026-03-29 13:04:37,753.7404174804688,Prepare Additional Capacity,1000.0,99.5,120.0,Central India,Compute,Demand is rising
+,,,2026-03-29 21:06:44,753.7404174804688,Prepare Additional Capacity,1000.0,99.5,120.0,Central India,Compute,Demand is rising
