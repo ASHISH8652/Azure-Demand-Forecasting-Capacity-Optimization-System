@@ -378,6 +378,12 @@ Risk Alerts
 * Real-time prediction interface
 * Interactive cloud demand analytics
 
+## 🌐 Live Deployment App
+
+The project is successfully deployed on Streamlit Community Cloud.
+
+🔗 **Live App:**  
+[Azure Demand Forecasting & Capacity Optimization System](https://azure-demand-forecasting-capacity-optimization-system-fx2icjdr.streamlit.app/)
 
 ## 📌 Academic & Industry Value
 ✔ End-to-end ML pipeline thinking
