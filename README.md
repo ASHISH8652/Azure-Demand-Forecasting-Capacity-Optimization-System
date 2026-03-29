@@ -1,7 +1,8 @@
 # 🚀 Azure Demand Forecasting & Capacity Optimization System
-## 📊 End-to-End Azure Capacity Optimization  & Demand Forecasting Project
+## 📊 End-to-End Azure Capacity Optimization & Demand Forecasting Project
 
-An end-to-end data engineering and machine learning project designed to analyze, clean, validate, and prepare Azure cloud demand data for intelligent forecasting and capacity planning.
+An end-to-end data engineering, machine learning, and deployment project designed to analyze, clean, validate, forecast, and monitor Azure cloud demand data for intelligent capacity planning and decision support.
+
 --
 This project simulates a real-world cloud infrastructure analytics pipeline, following professional ML workflow practices across four milestones.
 --
@@ -9,24 +10,34 @@ This project simulates a real-world cloud infrastructure analytics pipeline, fol
 ## 🌍 Overview
 
 > Cloud service providers must forecast infrastructure demand accurately to:
-> Prevent over-provisioning (wasted cost)
-> Prevent under-provisioning (service outages)
-> Maintain high availability
-> Optimize operational efficiency
+> Prevent over-provisioning (wasted cost)  
+> Prevent under-provisioning (service outages)  
+> Maintain high availability  
+> Optimize operational efficiency  
+
 > This project builds a structured system to:
+> Clean and validate cloud demand data  
+> Engineer forecasting-ready features  
+> Train and evaluate predictive models  
+> Deploy an interactive dashboard for forecasting and capacity planning  
+> Monitor risk, utilization, waste, and operational insights  
+
 ---
+
 ## 🌟 Key Features (Implemented)
-✔ Clean real-world noisy cloud data
 
-✔ Validate business constraints
+✔ Clean real-world noisy cloud data  
+✔ Validate business constraints  
+✔ Analyze demand patterns  
+✔ Prepare data for forecasting models  
+✔ Train ARIMA, XGBoost, and LSTM models  
+✔ Select the best-performing forecasting model  
+✔ Deploy an interactive Streamlit dashboard  
+✔ Generate real-time scenario-based demand forecasts  
+✔ Monitor capacity risk, underutilization, and wasted cost  
+✔ Export audit logs and dashboard reports  
 
-✔ Analyze demand patterns
 
-✔ Prepare data for forecasting models
-
-✔ Eventually deploy a forecasting pipeline
-
----
 ---
 ## 🏗️ Project Architecture (Milestone-Based Development)
 ```
@@ -45,14 +56,25 @@ Azure-Demand-Forecasting-Capacity-Optimization-System/
 │   ├── xgboost_demand_forecast_model.pkl
 │   ├── model_evaluation_report.md
 │   ├── agile_documentation.md
-│
+│   ├── Feature_list.pkl
 │
 ├── milestone4_deployment/
+|   ├── Milestone4_Forecast_Integration_CapacityPlanning.ipynb
+│   ├── app.py
+│   ├── streamlit_prediction_log.csv
+│   ├── README_assets/
+│   ├── Azure_Demand_Forecasting_demo_video.mp4
+│
+├── docs/
+│   ├── Defect_tracker_Azure_Demand_Forecasting.xlsx
+│   ├── Unit_Test_Plan_Azure_Demand_Forecasting.xlsx
+│
 │
 ├── data/
 │   ├── raw_dataset.csv
+    ├── feature_engineered_dataset.csv
 │
-├── requirements.txt
+├── Requirements.txt
 ├── LICENSE
 └── README.md
 ```
@@ -264,22 +286,108 @@ Azure-Demand-Forecasting-Capacity-Optimization-System/
 * Model evaluation metrics
 * Forecast predictions on test dataset
 * Feature importance analysis
-* These outputs establish a reliable demand prediction system ready for deployment in the next milestone.
+> These outputs establish a reliable demand prediction system ready for deployment in the next milestone.
 
-## 🚀 Upcoming Milestones
+## 🚀 Milestone 4 – Forecast Integration & Capacity Planning
+> Milestone 4 focuses on transforming the trained forecasting model into a working decision-support dashboard for real-time planning, monitoring, and business insights.
+## 🎯 Objective
+* Deploy the selected forecasting model
+* Integrate forecasting into an interactive Streamlit dashboard
+* Provide scenario-based demand prediction
+* Monitor utilization, waste cost, and regional risk
+* Maintain forecast logs and reporting outputs
+## 🧠 Milestone 4 Components
+### 🔹 Model Deployment
+* Loaded trained XGBoost forecasting model from .pkl
+* Loaded saved feature schema from feature_list.pkl
+* Created prediction-ready feature alignment logic
+* Enabled scenario-based forecasting using user inputs
+### 🔹 Dashboard Integration
+> Built a professional Streamlit dashboard with multiple sections:
+* KPI Overview
+* Demand Trends
+* Regional Analysis
+* Model & Forecast
+* Risk Alerts
+### 🔹 Automation Features
+Dynamic filtering by:
+* Region
+* Service Type
+*  Year
+*  Capacity Risk Threshold
+  
+Automated export options for:
+*  Filtered dashboard data
+*  Risk records
+*  Summary report
+*  Forecast audit log
+### 🔹 Monitoring & Audit Logging
+* Capacity risk events identified using threshold logic
+* Underutilized records flagged for inefficiency detection
+* Forecast results recorded in streamlit_prediction_log.csv
+* Scenario comparison added for planning decisions
+### 📊 Dashboard Highlights
+KPI Overview
+* Total Cost
+* Wasted Capacity Cost
+* Average Utilization
+* Incidents
+* Capacity Risk Events
+* Underutilized Flags
+* Average Headroom
+* Average Daily Growth Rate
+
+Demand Trends
+* Monthly usage trend
+* Growth rate trend
+* Weekly seasonality
+* Rolling demand statistics
+* Utilization vs headroom by service
+* Monthly waste cost trend
+* Top 5 high-demand months
+
+Regional Analysis
+* Regional capacity risk bubble chart
+* Top waste regions
+* Top risk regions
+* Region risk heatmap
+
+Model & Forecast
+* Scenario-based input controls
+* Predicted usage gauge
+* Short-term demand outlook
+* What-if comparison table
+* Decision recommendation logic
+
+Risk Alerts
+* High-risk record tracking
+* Underutilization analysis
+* Threshold-based risk monitoring
+* Recent high-risk records table
+### 📦 Output
+* app.py
+* Streamlit dashboard
+* Real-time forecasting workflow
+* Exportable reports
+* Audit logs
+* Final demo-ready deployed system
 
 ### 🔹 Milestone 4 – Deployment
 * Streamlit dashboard
 * Forecast visualization
 * Real-time prediction interface
 * Interactive cloud demand analytics
-## 📌 Academic & Industry Value
 
+
+## 📌 Academic & Industry Value
 ✔ End-to-end ML pipeline thinking
 ✔ Real-world cloud infrastructure use case
 ✔ Business validation rules applied
+✔ Forecast deployment and dashboard integration
+✔ Monitoring and reporting capability
 ✔ Clean structured repository
 ✔ Scalable system architecture
+
 
 ## 👨‍💻 Author
 
@@ -291,4 +399,4 @@ GitHub: https://github.com/ASHISH8652
 
 This project is licensed under the MIT License.
 
-“Data is not useful until it is clean, validated, and trusted.”
+“Data is not useful until it is clean, validated, trusted, and turned into decisions.”
